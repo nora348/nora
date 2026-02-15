@@ -1,9 +1,9 @@
-// 1. ربط العناصر من ملف الـ HTML
+
 const btn = document.querySelector('#btn');
 const list = document.querySelector('#usersList');
 
 // 2. دالة جلب البيانات باستخدام Async/Await
-// شرح للمشرف: الـ async تجعل الدالة ترجع Promise، والـ await تجعلنا ننتظر النتيجة بهدوء
+//  async تجعل الدالة ترجع Promise، والـ await تجعلنا ننتظر النتيجة بهدوء
 async function loadData() {
     try {
         // تغيير حالة الواجهة (State Management بسيطة)
@@ -19,7 +19,7 @@ async function loadData() {
         renderUsers(users);
 
     } catch (error) {
-        // في حال فشل الـ Promise (مثلاً لا يوجد إنترنت)
+        // في حال فشل الـ Promise ( يوجد إنترنت)
         list.innerHTML = '<p class="text-center text-red-500">حدث خطأ في الاتصال بالشبكة!</p>';
         console.error("خطأ:", error);
     }
