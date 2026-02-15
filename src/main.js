@@ -19,7 +19,7 @@ async function loadData() {
         renderUsers(users);
 
     } catch (error) {
-        // في حال فشل الـ Promise ( يوجد إنترنت)
+        // في حال فشل الـ Promise ( لايوجد انترنت )
         list.innerHTML = '<p class="text-center text-red-500">حدث خطأ في الاتصال بالشبكة!</p>';
         console.error("خطأ:", error);
     }
