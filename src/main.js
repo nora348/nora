@@ -33,12 +33,12 @@ function renderUsers(users) {
             <div class="p-4 border-b border-gray-200 hover:bg-gray-50 transition shadow-sm rounded-md bg-white mb-2">
                 <h3 class="font-bold text-lg text-gray-800">${user.name}</h3>
                 <p class="text-gray-600 font-mono text-sm">${user.email}</p>
-                <span class="text-xs text-blue-400 font-semibold uppercase tracking-wide">📍 ${user.address.city}</span>
+                <span class="text-xs text-blue-400 font-semibold uppercase tracking-wide"> ${user.address.city}</span>
             </div>
         `;
         list.innerHTML += userCard;
     });
 }
 
-// 4. إضافة مستمع للحدث (Event Listener)
+// يربط الواجه بالوظيفه
 btn.addEventListener('click', loadData);
